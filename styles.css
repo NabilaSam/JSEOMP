@@ -8,21 +8,40 @@
 }
 
 #landing{
-    background: linear-gradient(to bottom right,rgb(232, 99, 17), rgb(255, 250, 246));
-};
-
-#landingtext{
-    
+    background: url(./imgs/darren-nunis-EEGQ5T62iTI-unsplash.jpg) no-repeat center center/cover;
 
 };
 
-.strong{
-   
-};
+.body{
+    background-color: #111 !important;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+}
+.grid-container>div:nth-child(1){
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.pinkbtn{
+    background-color: linear-gradient(to top right,rgb(222, 101, 178), rgb(203, 14, 61)) !important;
+    border: none;
+    padding: 5px;
+}
+.pinkbtn a{
+    background-color: linear-gradient(to top right,rgb(222, 101, 178), rgb(203, 14, 61)) !important;
+    border: none;
+    padding: 5px;
+}
+
+
 
 @media only screen and (max-width: 600px){
     #landing{
-        background: url(./imgs/istockphoto-939345148-612x612.jpg) no-repeat center center/cover !important;
+        background: url(./imgs/darren-nunis-EEGQ5T62iTI-unsplash.jpg) no-repeat center center/cover !important;
     }
     #landingtext{
     display: block;

@@ -15,20 +15,19 @@
         <nav>
         </nav>
     </header>
-    <main>
-        <div id="landing" class="vh-100">
-            <div class="">
-                <div class="row container bg-transparent border border-dark border border-3">
-                    <div class="col d-flex justify-content-start">
-                        <img src="./imgs/6c123bfef7a409260d5480ac90e37b83.jpg" style="width: 100%" alt="">
-                   </div>
-                     <div id="col landingtext">
+    <main class="body">
+        <div id="landing" class="min-vh-100">
+            <div class="grid-container">
+                <div>
+                     <div >
                         <h2 class="d-flex justify-content-end"> 
                             <strong> We sell the highest quality <br>
-                                corsets in Cape Town</strong></h2>
+                                corsets</strong></h2>
                      <div class="d-flex justify-content-end ">
-                         <button >Browse our catalog</button>
-                     </div>
+                        <button type="button" class="pinkbtn btn btn-rounded">
+                         <a style="color: black;" href="#catalog">Browse our catalogue</a>
+                     </button>
+                    </div>
                      
                     </div>
                 </div>
@@ -37,9 +36,63 @@
             
             
         </div>
-        <div id="catalog">
+        <div id="catalog" class="bg-dark">
+                <select name="filter" id="filter" style="display:flex;">
+                    <option value="" onclick="filterSelection('all')">All</option>
+                    <option value="" onclick="filterSelection('ethereal')">Ethereal</option>
+                    <option value="" onclick="filterSelection('steampunk')">Steampunk</option>
+                    <option value="" onclick="filterSelection('classic')">Classics</option>
+                    <option value="" onclick="filterSelection('casual')">Casual Wear</option>
+                </select>
             <div class="items">
-                <div class="card"></div>
+                <div class="card ethereal" style="width: 18rem;">
+                    <img src="./imgs/54279e55845716e115af9f45943ec0bc.jpg" alt="">
+                    <p class="price"> Black ethereal lace corset with boning R250</p>
+                </div>
+                <div class="card ethereal" style="width: 18rem;">
+                    <img src="./imgs/416d7a5f78ace1f15cae43d22f4c04fc.jpg" alt="">
+                    <p class="price">R250</p>
+                </div>
+                <div class="card sleeves" style="width: 18rem;">
+                    <img src="./imgs/black&bluecorsetwlacesleeves.webp" alt="">
+                    <p class="price">R250</p>
+                </div>
+                <div class="card steampunk" style="width: 18rem;">
+                    <img src="./imgs/blksteampunk.webp" alt="">
+                    <p class="price">R250</p>
+                </div>
+                <div class="card steampunk" style="width: 18rem;">
+                    <img src="./imgs/brwnsteampunk.webp" alt="">
+                    <p class="price">R250</p>
+                </div>
+                <div class="card classic" style="width: 18rem;">
+                    <img src="./imgs/redcorset.webp" alt="">
+                    <p class="price">R250</p>
+                </div>
+                <div class="card casual" style="width: 18rem;">
+                    <img src="./imgs/lace-up-floral-corset-top-anotherchill-1_800x.webp" alt="">
+                    <p class="price">R250</p>
+                </div>
+                <div class="card sleeves" style="width: 18rem;">
+                    <img src="./imgs/goldcorsetwlacesleeves.webp" alt="">
+                    <p class="price">R250</p>
+                </div>
+                <div class="card casual" style="width: 18rem;">
+                    <img src="./imgs/cottagecore.webp" alt="">
+                    <p class="price">R250</p>
+                </div>
+                <div class="card casual" style="width: 18rem;">
+                    <img src="./imgs/blkcasual.webp" alt="">
+                    <p class="price">R250</p>
+                </div>
+                <div class="card sleeves" style="width: 18rem;">
+                    <img src="./imgs/blackcorsetwlacesleeves.webp" alt="">
+                    <p class="price">R250</p>
+                </div>
+                <div class="card classic" style="width: 18rem;">
+                    <img src="./imgs/black&goldcorset.webp" alt="">
+                    <p class="price">R250</p>
+                </div>
             </div>
         </div>
     </main>
