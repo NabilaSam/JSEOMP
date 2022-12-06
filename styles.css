@@ -7,6 +7,62 @@
     box-sizing: border-box;
 }
 
+.navbar{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(233, 226, 226,0.3) ;
+    color:black;
+}
+
+.icon{
+    margin: 0.5rem;
+}
+.navbarlinks{
+    height: 100%;
+}
+
+.navbarlinks ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.navbarlinks li{
+    list-style: none;
+}
+
+.navbarlinks li a{
+    text-decoration: none;
+    font-size: larger;
+    color:black;
+    text-shadow: 1px 1px white;
+    padding: 1rem;
+    display: block;
+}
+
+.navbarlinks li:hover{
+    background-color: rgb(243, 241, 241,0.6);
+}
+
+.toggle-button{
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    color: black;
+    border-radius: 10px;
+}
+
 #landing{
     background: url(./imgs/darren-nunis-EEGQ5T62iTI-unsplash.jpg) no-repeat center center/cover;
 
@@ -37,26 +93,56 @@
     padding: 5px;
 }
 
+#filter{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(222, 101, 178);
+}
 
+.option:hover{
+    background-color: rgb(203, 14, 61);
+}
 
-@media only screen and (max-width: 600px){
-    #landing{
-        background: url(./imgs/darren-nunis-EEGQ5T62iTI-unsplash.jpg) no-repeat center center/cover !important;
+/* Admin page */
+.adminpg{
+    background: url(./imgs/darren-nunis-EEGQ5T62iTI-unsplash.jpg) no-repeat center center/cover;
+}
+.table{
+    background-color: rgb(222, 101, 178,0.5);
+
+}
+ @media only screen and (max-width: 600px){
+    /* toggle button will show */
+    .toggle-button{
+        display:flex
     }
-    #landingtext{
-    display: block;
-    background: rgba(255,255,255,0);
-    border-style: none;
-    border-radius: 0px;
-    left: 20px;
-    top: 300px;
-    z-index: 32;
-    width: 345px;
-    height: 150px;
-    transform: scale(0.8);
-    transform-origin: 0 0;
-    -webkit-transform: scale(0.8);
-    -webkit-transform-origin: 0 0;
-    position: absolute;
+
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+/* Don't want the links to display yet */
+    .navbarlinks{
+        display: none;
+        width: 100%;
+    }
+/* links will be in a column in toggle button */
+    .navbarlinks ul{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbarlinks li{
+        text-align: center;
+       
+    }
+
+    .navbarlinks li a{
+        padding: 0.5rem 1rem;
+    }
+
+    .navbarlinks.active{
+        display: flex;
     }
 }
