@@ -2,9 +2,8 @@
 
 let tbody = document.getElementById('catalogue');
 
-
 async function fetchData(){
-    let res =await fetch('../catalogue.json');
+    let res =await fetch("./catalogue.json");
     let data = await res.json();
     return data.all;
 };
@@ -13,16 +12,16 @@ async function display(){
     data.forEach(item => {
         tbody.innerHTML += `
         <tr>
+          <th scope="row">${item.id}</th>
           <td>${item.name}</td>
-          <td> ${item.id}</td>
           <td> ${item.price}</td>
           <td> ${item.style}</td>
-          <td> <button id="Editbtn">Edit</button>
-          <button id="dltbtn">Delete</button></td>
+          <td> <button class="btn btn-secondary btn-lg" style="background-color: rgb(181, 218, 181); color: black;" id="Editbtn">Edit</button>
+          <button id="dltbtn" class="btn btn-secondary btn-lg" style="background-color: rgb(181, 218, 181); color: black;">Delete</button></td>
       </tr> `
 });
 };
-
+ 
 display();
 
 // Table

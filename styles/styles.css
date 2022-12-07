@@ -64,7 +64,7 @@
 }
 
 #landing{
-    background: url(./imgs/darren-nunis-EEGQ5T62iTI-unsplash.jpg) no-repeat center center/cover;
+    background: url(../imgs/darren-nunis-EEGQ5T62iTI-unsplash.jpg) no-repeat center center/cover;
 
 };
 
@@ -106,10 +106,11 @@
 
 /* Admin page */
 .adminpg{
-    background: url(./imgs/darren-nunis-EEGQ5T62iTI-unsplash.jpg) no-repeat center center/cover;
+    background: url(../imgs/darren-nunis-EEGQ5T62iTI-unsplash.jpg) no-repeat center center/cover;
 }
 .table{
     width: 100%;
+    text-align: center;
 
 }
 
@@ -119,6 +120,12 @@
 
 .editbtn{
     background-color:  rgb(222, 101, 178);
+}
+
+
+#addbtn{
+    display: flex;
+    text-align: center;
 }
  @media only screen and (max-width: 600px){
     /* toggle button will show */
@@ -132,11 +139,12 @@
     }
 /* Don't want the links to display yet */
     .navbarlinks{
-        display: none;
+        
         width: 100%;
     }
 /* links will be in a column in toggle button */
     .navbarlinks ul{
+        font-size: smaller;
         flex-direction: column;
         width: 100%;
     }

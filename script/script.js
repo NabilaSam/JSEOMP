@@ -1,90 +1,118 @@
-// Product data
-let all = [
-    {
-        "id": 1,
-        "Image": "./imgs/54279e55845716e115af9f45943ec0bc.jpg",
-        "price": "R300",
-        "Style": "ethereal"
+// // Product data
+// let all = [
+//     {
+//         "id": 1,
+//         "Image": "./imgs/54279e55845716e115af9f45943ec0bc.jpg",
+//         "price": "R300",
+//         "Style": "ethereal"
 
-    },
-    {
-        "id": 2,
-        "Image": "./imgs/416d7a5f78ace1f15cae43d22f4c04fc.jpg",
-        "price": "R300",
-        "Style": "ethereal"
+//     },
+//     {
+//         "id": 2,
+//         "Image": "./imgs/416d7a5f78ace1f15cae43d22f4c04fc.jpg",
+//         "price": "R300",
+//         "Style": "ethereal"
 
-    },
-    {
-        "id": 3,
-        "Image": "./imgs/blksteampunk.webp",
-        "price": "R400",
-        "Style": "steampunk"
+//     },
+//     {
+//         "id": 3,
+//         "Image": "./imgs/blksteampunk.webp",
+//         "price": "R400",
+//         "Style": "steampunk"
 
-    },
-    {
-        "id": 4,
-        "Image": "./imgs/brwnsteampunk.webp",
-        "price": "R350",
-        "Style": "steampunk"
+//     },
+//     {
+//         "id": 4,
+//         "Image": "./imgs/brwnsteampunk.webp",
+//         "price": "R350",
+//         "Style": "steampunk"
 
-    },
-    {
-        "id": 5,
-        "Image": "./imgs/redcorset.webp",
-        "price": "R420",
-        "Style": "classic"
+//     },
+//     {
+//         "id": 5,
+//         "Image": "./imgs/redcorset.webp",
+//         "price": "R420",
+//         "Style": "classic"
 
-    },
-    {
-        "id": 6,
-        "Image": "./imgs/black&goldcorset.webp",
-        "price": "R300",
-        "Style": "classic"
+//     },
+//     {
+//         "id": 6,
+//         "Image": "./imgs/black&goldcorset.webp",
+//         "price": "R300",
+//         "Style": "classic"
 
-    },
-    {
-        "id": 7,
-        "Image": "./imgs/lace-up-floral-corset-top-anotherchill-1_800x.webp",
-        "price": "R300",
-        "Style": "casual"
+//     },
+//     {
+//         "id": 7,
+//         "Image": "./imgs/lace-up-floral-corset-top-anotherchill-1_800x.webp",
+//         "price": "R300",
+//         "Style": "casual"
 
-    },
-    {
-        "id": 8,
-        "Image": "./imgs/cottagecore.webp",
-        "price": "R300",
-        "Style": "casual"
+//     },
+//     {
+//         "id": 8,
+//         "Image": "./imgs/cottagecore.webp",
+//         "price": "R300",
+//         "Style": "casual"
 
-    },
-    {
-        "id": 9,
-        "Image": "./imgs/blkcasual.webp",
-        "price": "R300",
-        "Style": "casual"
+//     },
+//     {
+//         "id": 9,
+//         "Image": "./imgs/blkcasual.webp",
+//         "price": "R300",
+//         "Style": "casual"
 
-    },
-    {
-        "id": 10,
-        "Image": "./imgs/black&bluecorsetwlacesleeves.webp",
-        "price": "R300",
-        "Style": "sleeves"
+//     },
+//     {
+//         "id": 10,
+//         "Image": "./imgs/black&bluecorsetwlacesleeves.webp",
+//         "price": "R300",
+//         "Style": "sleeves"
 
-    },
-    {
-        "id": 11,
-        "Image": "./imgs/goldcorsetwlacesleeves.webp",
-        "price": "R300",
-        "Style": "sleeves"
+//     },
+//     {
+//         "id": 11,
+//         "Image": "./imgs/goldcorsetwlacesleeves.webp",
+//         "price": "R300",
+//         "Style": "sleeves"
 
-    },
-    {
-        "id": 12,
-        "Image": "./imgs/black&bluecorsetwlacesleeves.webp",
-        "price": "R500",
-        "Style": "sleeves"
+//     },
+//     {
+//         "id": 12,
+//         "Image": "./imgs/black&bluecorsetwlacesleeves.webp",
+//         "price": "R500",
+//         "Style": "sleeves"
 
-    }
-]
+//     }
+// ]
+
+// Fetch API
+async function fetchData(){
+    let res = await fetch('./catalogue.json');
+    let data = await res.json();
+    return data.books;
+};
+
+// product list in cards
+let cards = document.getElementById('cards');
+
+async function display(){
+    let data = await fetchData();
+    data.forEach((item)=>{
+        cards.innerHTML += `
+        <div class="card" style="width: 17rem;">
+                    <img src="${item.image}" style="width:fit-content;">
+                <div class="card-body">
+                    <h3 class="card-title"> ${item.name}</h3>
+                    <p><b>Style: ${item.style}</b></p>
+                    <h5>Price: R ${item.price}</h5>
+                    <button class="btn btn-outline-dark" style="background-color: rgb(222, 101, 178);">Add to checkout</button>
+                </div>
+            </div>`
+    })
+}
+display();
+
 // syntax for a conditional operator( conditional ? expression_when_true : expression_when_false;)
 // Sample Data
 // Using stringify to adjust the data in the ideal form for this js file
@@ -93,20 +121,6 @@ JSON.parse(localStorage.getItem('all')):
 JSON.parse(localStorage.setItem("all", JSON.stringify(all)));
 
 
-
-// // Nav bar
-// const toggleButton = document.getElementsByClassName('toggle-button')[0]
-// const navbarlinks = document.getElementsByClassName('navbar-links')[0]
-
-// // In the event where the togglebutton is clicked, the navbar links will display
-// toggleButton.addEventListener('click', ()=>{
-//     navbarlinks.classList.toggle('active')
-// })
-
-// filter option
-// function filterCard("all") {
-    
-// };
 
 
 

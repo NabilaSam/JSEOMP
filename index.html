@@ -10,7 +10,7 @@
     <script src="https://kit.fontawesome.com/cce18f0ce0.js"
     crossorigin="anonymous"></script>  
     <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/2226/2226342.png" type="image/x-icon">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/styles/styles.css">
     <title>Shop</title>
 </head>
 <body>
@@ -60,6 +60,21 @@
                     <option value="" onclick="filterCard('classic')">Classics</option>
                     <option value="" onclick="filterCard('casual')">Casual Wear</option>
                 </select>
+
+                <section id="cards">
+
+                    <div class="card" style="width: 17rem;">
+                    <img src="${item.image}" style="width:fit-content;">
+                <div class="card-body">
+                    <h3 class="card-title"> ${item.name}</h3>
+                    <p><b>Style: ${item.style}</b></p>
+                    <h5>Price: R ${item.price}</h5>
+                    <button class="btn btn-outline-dark" style="background-color: rgb(222, 101, 178);">Add to checkout</button>
+                </div>
+            </div>
+                </section>
+
+                <!-- old code -->
             <div class="items">
                 <div class="card ethereal" style="width: 18rem;">
                     <img src="./imgs/54279e55845716e115af9f45943ec0bc.jpg" alt="">
@@ -113,6 +128,6 @@
         </div>
     </main>
     <footer></footer>
-    <script src="style.js"></script>
+    <script src="script/script.js"></script>
 </body>
 </html>

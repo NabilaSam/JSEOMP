@@ -10,18 +10,13 @@
     <script src="https://kit.fontawesome.com/cce18f0ce0.js"
     crossorigin="anonymous"></script>  
     <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/2226/2226342.png" type="image/x-icon">
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../styles/styles.css">
     <title>Admin</title>
 </head>
 <body class="adminpg min-vh-100">
     <nav class="navbar">
         <div class="icon"> <img src="../imgs/corseticon.png" alt="icon" width="50px"> </div>
-        <!-- creating the toggle button -->
-        <a href="#" class="toggle-button">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </a>
+        
         <!-- other pages -->
         <div class="navbarlinks">
             <ul>
@@ -35,22 +30,19 @@
             <table class="table table-success table-hover">
                 <thead>
                     <tr>
-                    <th>Name</th>
-                    <th>Available Stock</th>
-                    <th>Price</th>
-                    <th>Style</th>
-                    <th>Edit and Delete
-                    </th>
+                    <th scope="col">Item #</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Price (ZAR)</th>
+                    <th scope="col">Style</th>
+                    <th scope="col">Edit and Delete</th>
                     </tr>
                 </thead>
                 <tbody id="catalogue"></tbody>
-                <tr>
-                    <td><img src="" alt="">
-                    </td>
-                </tr>
+               
             </table>
+            <button class="btn btn-secondary btn-lg" style="background-color: rgb(181, 218, 181); color: black;" id="addbtn">Add Product</button>
         </div>
     </main>
-    <script src="../html/admin.js"></script>
+    <script src="../script/admin.js"></script>
 </body>
 </html>
