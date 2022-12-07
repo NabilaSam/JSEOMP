@@ -1,88 +1,99 @@
-
 {
 "all" :[
     {
         "id": 1,
-        "Image": "./imgs/54279e55845716e115af9f45943ec0bc.jpg",
+        "name": "Black lace corset",
+        "image": "./imgs/54279e55845716e115af9f45943ec0bc.jpg",
         "price": "R300",
-        "Style": "ethereal"
+        "style": "ethereal"
 
     },
     {
         "id": 2,
-        "Image": "./imgs/416d7a5f78ace1f15cae43d22f4c04fc.jpg",
-        "price": "R300",
-        "Style": "ethereal"
+        "name": "Floral lace corset",
+        "image": "./imgs/416d7a5f78ace1f15cae43d22f4c04fc.jpg",
+        "price": "R420",
+        "style": "ethereal"
 
     },
     {
         "id": 3,
-        "Image": "./imgs/blksteampunk.webp",
+        "name": "Black steampunk corset",
+        "image": "./imgs/blksteampunk.webp",
         "price": "R300",
-        "Style": "steampunk"
+        "style": "steampunk"
 
     },
     {
         "id": 4,
-        "Image": "./imgs/brwnsteampunk.webp",
+        "name": "Brown steampunk corset",
+        "image": "./imgs/brwnsteampunk.webp",
         "price": "R300",
-        "Style": "steampunk"
+        "style": "steampunk"
 
     },
     {
         "id": 5,
-        "Image": "./imgs/redcorset.webp",
+        "name": "Crimson red classic corset",
+        "image": "./imgs/redcorset.webp",
         "price": "R300",
-        "Style": "classic"
+        "style": "classic"
 
     },
     {
         "id": 6,
-        "Image": "./imgs/black&goldcorset.webp",
+        "name": "Black and gold corset",
+        "image": "./imgs/black&goldcorset.webp",
         "price": "R300",
-        "Style": "classic"
+        "style": "classic"
 
     },
     {
         "id": 7,
-        "Image": "./imgs/lace-up-floral-corset-top-anotherchill-1_800x.webp",
+        "name": "White floral casual",
+        "image": "./imgs/lace-up-floral-corset-top-anotherchill-1_800x.webp",
         "price": "R300",
-        "Style": "casual"
+        "style": "casual"
 
     },
     {
         "id": 8,
-        "Image": "./imgs/cottagecore.webp",
+        "name": "cottagecore corset with sleeves",
+        "image": "./imgs/cottagecore.webp",
         "price": "R300",
-        "Style": "casual"
+        "style": "casual"
 
     },
     {
         "id": 9,
-        "Image": "./imgs/blkcasual.webp",
+        "name": "White casual corset with tree print",
+        "image": "./imgs/blkcasual.webp",
         "price": "R300",
-        "Style": "casual"
+        "style": "casual"
 
     },
     {
         "id": 10,
-        "Image": "./imgs/black&bluecorsetwlacesleeves.webp",
+        "name": "Black lace corset",
+        "image": "./imgs/black&bluecorsetwlacesleeves.webp",
         "price": "R300",
-        "Style": "sleeves"
+        "style": "sleeves"
 
     },
     {
         "id": 11,
-        "Image": "./imgs/goldcorsetwlacesleeves.webp",
+        "name": "White corset",
+        "image": "./imgs/goldcorsetwlacesleeves.webp",
         "price": "R300",
-        "Style": "sleeves"
+        "style": "sleeves"
 
     },
     {
         "id": 12,
-        "Image": "./imgs/black&bluecorsetwlacesleeves.webp",
+        "name": "Black & blue corset with sleeves",
+        "image": "./imgs/black&bluecorsetwlacesleeves.webp",
         "price": "R300",
-        "Style": "sleeves"
+        "style": "sleeves"
 
     }
   
