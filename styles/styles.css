@@ -82,6 +82,18 @@
     grid-row: 2/3;
 }
 
+.section{
+    align-content: center;
+}
+.card{
+    overflow: hidden;
+    width: 200px;
+    margin: 10px;
+    margin-left: 40px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
 .pinkbtn{
     background-color: linear-gradient(to top right,rgb(222, 101, 178), rgb(203, 14, 61)) !important;
     border: none;
