@@ -85,6 +85,11 @@ let x = JSON.parse(localStorage.getItem('catalogue'));
 
 console.log(x);
 
+
+// syntax for a conditional operator( conditional ? expression_when_true : expression_when_false;)
+// Sample Data
+// Using stringify to adjust the data in the ideal form for this js file. chrck local storage in browser
+
 let products = JSON.parse(localStorage.getItem('catalogue'))? 
 JSON.parse(localStorage.getItem('catalogue')):
 JSON.parse(localStorage.setItem("catalogue", JSON.stringify(catalogue)));
@@ -94,7 +99,7 @@ let pCards = document.getElementById('cards');
 
 function display(){
     try {
-        products.forEach((item)=>{
+        x.forEach((item)=>{
         pCards.innerHTML += `
         <div class="card col-3" style="width: 17rem;">
                     <img src="${item.image}">
@@ -111,12 +116,80 @@ function display(){
 }
 display();
 
-// syntax for a conditional operator( conditional ? expression_when_true : expression_when_false;)
-// Sample Data
-// Using stringify to adjust the data in the ideal form for this js file. chrck local storage in browser
-// let products = JSON.parse(localStorage.getItem('all')) ?
-// JSON.parse(localStorage.getItem('all')):
-// JSON.parse(localStorage.setItem("all", JSON.stringify(all)));
+
+// Trying to filter
+
+// start with assigning a value to that ID
+let styleFilter = document.getElementById('filter');
+
+
+
+function filterCard(){
+      const filteredCards = x.filter(obj => {
+        return obj.style === "ethereal";
+      });
+        console.log(filteredCards);
+        x.forEach((obj)=>{
+                            pCards.innerHTML += `
+                            <div class="card col-3" style="width: 17rem;">
+                                        <img src="${item.image}">
+                                    <div class="card-body">
+                                        <h3 class="card-title"> ${item.name}</h3>
+                                        <p><b>Style: ${item.style}</b></p>
+                                        <h5>Price: R ${item.price}</h5>
+                                        <button class="btn btn-outline-dark" style="background-color: rgb(222, 101, 178);">Add to checkout</button>
+                                    </div>
+                                </div>`
+        })
+    
+
+        }
+    
+    
+    
+    
+    // switch (true) {
+    //    // case 1 - displaying item only if it has a certain style
+    //   // Thus performing a filtered search for each object with the "style": "ethereal" property
+  
+    //  case `ethereal`:
+    //         if (catalogue.style == "ethereal") {
+    //             products.forEach((item)=>{
+    //                 pCards.innerHTML += `
+    //                 <div class="card col-3" style="width: 17rem;">
+    //                             <img src="${item.image}">
+    //                         <div class="card-body">
+    //                             <h3 class="card-title"> ${item.name}</h3>
+    //                             <p><b>Style: ${item.style}</b></p>
+    //                             <h5>Price: R ${item.price}</h5>
+    //                             <button class="btn btn-outline-dark" style="background-color: rgb(222, 101, 178);">Add to checkout</button>
+    //                         </div>
+    //                     </div>` 
+                    
+    //                 // And remove the other cards
+    //             })
+    //         }
+            
+    //         break;
+    
+    //     default:
+    //         break;
+    
+   
+   
+   
+    // if (styleFilter.value == "catalogue") {
+    //     filteredCards = catalogue;
+    // } else {
+    //     filteredCards = catalogue.filter( x=>{
+    //         return x.style == styleFilter.value;
+    //     })
+    // }
+
+
+  
+     
+// }
 
 
 

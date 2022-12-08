@@ -65,7 +65,8 @@
 
 #landing{
     background: url(../imgs/darren-nunis-EEGQ5T62iTI-unsplash.jpg) no-repeat center center/cover;
-
+    opacity: ;
+    hue
 };
 
 .body{
@@ -123,6 +124,7 @@
 .table{
     width: 100%;
     text-align: center;
+    background-color: rgb(250, 228, 242) ;
 
 }
 
