@@ -35,14 +35,15 @@
                     <th scope="col">Edit and Delete</th>
                     </tr>
                 </thead>
-                <tbody id="products"></tbody>
+                <tbody id="tabulated"></tbody>
                <!-- admin.js file adds by DOM manipulation -->
             </table>
         </div>
         <!-- Modal button -->
             <button
+           id="addBtn"
             class="btn btn-secondary btn-lg" 
-            style="background-color: rgb(181, 218, 181); color: black;" 
+            style="background-color:  rgb(209, 143, 185); color: black;" 
             type="button" data-bs-toggle="modal" data-bs-target="#modalForm"
             >Add Product</button>
             <!-- Modal -->
@@ -62,13 +63,12 @@
                              </div>
                              <div>
                                  <label for="inputStyle"> Select the style</label>
-                                 <select name="theStyle" id="addStyle">
-                                     <option value="">Ethereal</option>
-                                     <option value="">Casual</option>
-                                     <option value="">Steampunk</option>
-                                     <option value="">Classic</option>
-                                 </select>
+                                 <input type="price" id="addStyle">
                              </div>
+                             <div>
+                                <label for="inputImage"> Picture of Product</label>
+                                <input type="url" id="addImage">
+                            </div>
                              <button class="btn btn-secondary btn-lg" 
                                  style="background-color: rgb(181, 218, 181); color: black;" 
                                   id="addBtn">Add Product

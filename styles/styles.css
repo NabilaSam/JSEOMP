@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
 /* Universal selectors */
 *,
 *::after,
@@ -7,7 +9,7 @@
     box-sizing: border-box;
 }
 
-.navbar{
+.navbznav{
     display: flex;
     position: relative;
     justify-content: space-between;
@@ -32,7 +34,7 @@
     list-style: none;
 }
 
-.navbarlinks li a{
+.nav-link a{
     text-decoration: none;
     font-size: larger;
     color:black;
@@ -45,29 +47,18 @@
     background-color: rgb(243, 241, 241,0.6);
 }
 
-.toggle-button{
-    position: absolute;
-    top: 0.5rem;
-    right: 0.5rem;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-}
-
-.toggle-button .bar{
-    height: 3px;
-    width: 100%;
-    color: black;
-    border-radius: 10px;
-}
-
 #landing{
-    background: url(../imgs/darren-nunis-EEGQ5T62iTI-unsplash.jpg) no-repeat center center/cover;
-    opacity: ;
-    hue
-};
+    background: url(../imgs/cassio-jardim-Efd5oh-nQWI-unsplash.jpg) no-repeat center center/cover;
+    
+}
+
+.homepage-heading{
+    font-family: 'Alfa Slab One', cursive;
+    color: white;
+    text-shadow: 2px 2px black;
+    
+
+}
 
 .body{
     background-color: #111 !important;
@@ -110,7 +101,7 @@
     display: flex;
     width: 100%;
     text-align: center;
-    background-color: rgb(222, 101, 178);
+    background-color: rgb(209, 143, 185);
 }
 
 .option:hover{
@@ -119,12 +110,12 @@
 
 /* Admin page */
 .adminpg{
-    background: url(../imgs/darren-nunis-EEGQ5T62iTI-unsplash.jpg) no-repeat center center/cover;
+    background: url(../imgs/cassio-jardim-Efd5oh-nQWI-unsplash.jpg) no-repeat center center/cover;
 }
 .table{
     width: 100%;
     text-align: center;
-    background-color: rgb(250, 228, 242) ;
+    background-color: rgb(246, 246, 246) ;
 
 }
 

@@ -1,8 +1,9 @@
 // let all = JSON.parse(localStorage.getItem('all'));
 
-let tbody = document.getElementById('products');
+let tbody = document.getElementById('tabulated');
 // Table
-let catalogue= JSON.parse(localStorage.catalogue)
+let catalogue= JSON.parse(localStorage.catalogue);
+let x = JSON.parse(localStorage.catalogue)
 
     catalogue.forEach(item => {
         try {
@@ -15,15 +16,14 @@ let catalogue= JSON.parse(localStorage.catalogue)
           <td> <button class="btn btn-secondary btn-lg" 
           style="background-color: rgb(181, 218, 181); 
           color: black;" id="Editbtn">Edit</button>
-          <button id="dltbtn" class="btn btn-secondary btn-lg" 
-          style="background-color: rgb(181, 218, 181); 
+          <button onclick="del(${item.id})" id="dltbtn" class="btn btn-secondary btn-lg" 
+          style="background-color: red; 
           color: black;">Delete</button>
           </td>
       </tr> `
 
         } catch (error) {
-            console.log(error);
-        }
+console.trace(error)        }
      } );  
  
 
@@ -31,26 +31,70 @@ let catalogue= JSON.parse(localStorage.catalogue)
 // Add button
 let add = document.querySelector('#addBtn')
 add.addEventListener('click', (e)=>{
+    // append the data to ur local storage. and set the item, and then you need to getitem and then build the table row
     e.preventDefault();
     let name =  document.querySelector('#addName').value;
     let price = document.querySelector('#addPrice').value;
     let style = document.querySelector('#addStyle').value;
+    let image = document.querySelector('#addImage').value;
 
     catalogue.push({
         name,
         price,
-        style
+        style,
+        image
     })
-    console.log(catalogue.at(-1))
-    localStorage.setItem('products', JSON.stringify(catalogue));
+    // console.log(catalogue.at(-1))
+    location.reload()
+    localStorage.setItem('tabulated', JSON.stringify(catalogue));
+
+    // location.reload();
+    // getitem and then display row
+    // let addedItem = JSON.parse(localStorage.getItem('catalogue'))
 
 })
 
 // delete button
+// not getElementById because it will only select the first delete button
+// with query selector all, it'll target all the delete buttons
 
-function remove(id){
-    cart = JSON.parse(catalogue.getItem(""))
+function del(id) {
+    localStorage.setItem('catalogue', JSON.stringify(catalogue));
+
+    catalogue.splice(catalogue.findIndex(item=>item.id==id),1)
+    
+    console.log(catalogue)
+    console.log(id)
+    localStorage.setItem('catalogue',JSON.stringify(catalogue))
+    console.log(JSON.parse(localStorage.catalogue));
+    location.reload()
+    
 }
+
+// // Delete button using splice and concat
+// function del(index) {
+//     let newcatalogue = catalogue.slice(0, index).concat(product.slice(index + 1))
+//     localStorage.setItem('catalogue', JSON.stringify(newcatalogue))
+//     catalogue =JSON.parse(localStorage.getItem('catalogue'))
+//     loadAdmincatalogueList()
+// }
+
+// let del = document.querySelectorAll('#dltbtn');
+// Object.keys(del).forEach(item => {
+//     del[item].addEventListener('click', (e)=>{
+//         let index = obj
+
+//         if (del[obj] == x[obj]) {
+//             x.splice(index,1)
+//             localStorage.setItem('products', JSON.stringify(catalogue));
+//             x = JSON.parse(localStorage.getItem('products'))
+//         } else {
+//             return alert('Cannot Delete, please consult Nabila')
+//         }
+//     })
+// })
+
+
 
 // // METHOD 1
 // function remove(id){
