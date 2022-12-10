@@ -52,8 +52,12 @@
     font-family: 'Alfa Slab One', cursive;
     color: white;
     text-shadow: 2px 2px black;
-    
+}
 
+.productpg{
+    margin: auto;
+    display: flex;
+    justify-content: center;
 }
 
 .body{
@@ -88,7 +92,7 @@
     padding: 5px;
 }
 .pinkbtn a{
-    background-color: linear-gradient(to top right,rgb(222, 101, 178), rgb(203, 14, 61)) !important;
+    background-color: linear-gradient(to top right,rgb(206, 48, 77), rgb(203, 14, 61)) !important;
     border: none;
     padding: 5px;
 }

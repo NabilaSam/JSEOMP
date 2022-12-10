@@ -15,65 +15,55 @@
 </head>
 <body>
     
-    <main class="body">
-        <div id="landing" class="min-vh-100">
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                  <a class="navbar-brand " href="#"><img src="../imgs/corseticon.png" alt="icon" width="50px"></a>
-                  <button class="navbar-toggler bg-dark" style="color: black;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav navbarlinks">
-                      <!-- <a class="nav-link active" aria-current="page" href="#">Checkout</a> -->
-                      <a href="../index.html"> <b> <i class="fa fa-house"></i> Home</b></a>
-                      <a href="/html/admin.html"> <b> <i class="fa fa-info"></i> Admin</b></a>
-                    </div>
-                  </div>
-                </div>
-              </nav>
-            <div class="grid-container">
-                <div>
-                     <div>
-                         <h1 class="homepage-heading  d-flex justify-content-end"> We sell the highest quality corsets</h1>
-                     <div class="d-flex justify-content-end ">
-                        <button type="button" class="pinkbtn btn btn-rounded">
-                         <a style="color: black;" href="#catalog">Browse our catalogue</a>
-                     </button>
-                    </div>
-                     
-                    </div>
-                </div>
+  <main class="body">
+    <div id="landing" class="min-vh-100">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand " href="./index.html"><img src="../imgs/corseticon.png" alt="icon" width="50px"></a>
+          <button class="navbar-toggler bg-dark" style="color: black;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav navbarlinks">
+              <!-- <a class="nav-link active" aria-current="page" href="#">Checkout</a> -->
+              <a href="/html/checkout.html"> <b> <i class="fa fa-shopping-cart"></i> Checkout</b></a>
+              <a href="/html/admin.html"> <b> <i class="fa fa-info"></i> Admin</b></a>
             </div>
-           
-            
-            
+          </div>
         </div>
-        <div id="catalog" class="bg-dark">
-                <select name="filter" id="filter" style="display:flex;">
-                    <option value="all">All</option>
-                    <option value="ethereal">Ethereal</option>
-                    <option value="steampunk">Steampunk</option>
-                    <option value="classic">Classics</option>
-                    <option value="casual">Casual Wear</option>
-                </select>
-
-                <section class="row" id="cards"> 
-
-                </section>
-
-                
-        </div>
-          
-    </main>
-    <footer class="footer mt-auto py-3 bg-black" style="text-align: center;">   
-              <div>
-                 <p>© Copyright 2022 by Nabila. All rights reserved.</p>
-               </div>
-           </footer>
-    <script src="../script/admin.js"></script>
+      </nav>
+      <div class="grid-container">
+        <div>
+          <div>
+            <h1 class="homepage-heading  d-flex justify-content-end"> We sell the highest quality corsets</h1>
+            <div class="d-flex justify-content-end ">
+              <button type="button" class="pinkbtn btn btn-rounded">
+                <a style="color: black;" href="#catalog">Browse our catalogue</a>
+              </button>
+            </div>
+          </div>
+       </div>
+      </div>
+   </div>
+   <div id="catalog" class="bg-dark">
+     <select name="filter" id="filter" style="display:flex;">
+       <option value="all">All</option>
+       <option value="ethereal">Ethereal</option>
+       <option value="steampunk">Steampunk</option>
+       <option value="classic">Classics</option>
+       <option value="casual">Casual Wear</option>
+     </select>
+     <section class="row productpg" id="cards"> 
+      </section>
+    </div>
+   </main>
+  <footer class="footer mt-auto py-3 bg-black" style="text-align: center;">   
+    <div>
+      <p>© Copyright 2022 by Nabila. All rights reserved.</p>
+    </div>
+ </footer>
+    <script src="script/script.js"></script>
     <script src="https://kit.fontawesome.com/cce18f0ce0.js"crossorigin="anonymous"></script>  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="script/script.js"></script>
 </body>
 </html>

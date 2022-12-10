@@ -12,85 +12,89 @@
     <title>Admin</title>
 </head>
 <body class="adminpg min-vh-100">
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a class="navbar-brand " href="#"><img src="../imgs/corseticon.png" alt="icon" width="50px"></a>
-          <button class="navbar-toggler bg-dark" style="color: black;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon" style="color: black;"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav navbarlinks">
-              <!-- <a class="nav-link active" aria-current="page" href="#">Checkout</a> -->
-              <a href="../index.html"> <b> <i class="fa fa-house"></i> Home</b></a>
-              <a href="/html/admin.html"> <b> <i class="fa fa-info"></i> Admin</b></a>
-            </div>
-          </div>
-        </div>
-      </nav>
-    <main>
-        <div>
-            <table class="table">
-                <thead>
-                    <tr>
-                    <th scope="col">Image</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Price (ZAR)</th>
-                    <th scope="col">Style</th>
-                    <th scope="col">Edit and Delete</th>
-                    </tr>
-                </thead>
-                <tbody id="tabulated"></tbody>
-               <!-- admin.js file adds by DOM manipulation -->
-            </table>
-        </div>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+     <a class="navbar-brand " href="/index.html"><img src="../imgs/corseticon.png" alt="icon" width="50px"></a>
+     <button class="navbar-toggler bg-dark" style="color: black;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" style="color: black;"></span>
+      </button>
+     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+       <div class="navbar-nav navbarlinks">
+         <!-- <a class="nav-link active" aria-current="page" href="#">Checkout</a> -->
+          <a href="/html/checkout.html"> <b> <i class="fa fa-shopping-cart"></i> Checkout</b></a>
+         <a href="/index.html"> <b> <i class="fa fa-house"></i> Home</b></a>
+       </div>
+      </div>
+    </div>
+  </nav>
+  <main>
+   <div>
+     <table class="table">
+       <thead>
+         <tr>
+         <th scope="col">Image</th>
+         <th scope="col">Name</th>
+         <th scope="col">Price (ZAR)</th>
+         <th scope="col">Style</th>
+         <th scope="col">Edit and Delete</th>
+         </tr>
+       </thead>
+         <tbody id="tabulated"></tbody>
+        <!-- admin.js file adds by DOM manipulation -->
+     </table>
+   </div>
         <!-- Modal button -->
-            <button
-           id="addBtn"
-            class="btn btn-secondary btn-lg" 
-            style="background-color:  rgb(209, 143, 185); color: black;" 
-            type="button" data-bs-toggle="modal" data-bs-target="#modalForm"
-            >Add Product</button>
-            <!-- Modal -->
-            
-                <div class="modal fade" id="modalForm" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <form>
-                           <div class="modal-body">
-                             <div>
-                                 <label for="inputname"> Name of Product</label>
-                                 <input type="name" id="addName">
-                             </div>
-                             <div>
-                                 <label for="inputprice"> Price of Product</label>
-                                 <input type="price" id="addPrice">
-                             </div>
-                             <div>
-                                 <label for="inputStyle"> Select the style</label>
-                                 <input type="price" id="addStyle">
-                             </div>
-                             <div>
-                                <label for="inputImage"> Picture of Product</label>
-                                <input type="url" id="addImage">
-                            </div>
-                             <button class="btn btn-secondary btn-lg" 
-                                 style="background-color: rgb(181, 218, 181); color: black;" 
-                                  id="addBtn">Add Product
-                                </button>
-                          </div>
-                      </form>
-                      </div>
-                    </div>
-                  </div>
-            
-            
-        </div>
-    </main>
-    <footer class="footer mt-auto py-3 bg-black" style="text-align: center;">   
-        <div>
-           <p>© Copyright 2022 by Nabila. All rights reserved.</p>
+    <button
+     id="addBtn"
+      class="btn btn-secondary btn-lg" 
+      style="background-color:  rgb(209, 143, 185); color: black;" 
+      type="button" data-bs-toggle="modal" data-bs-target="#modalForm"
+      >Add Product
+    </button>
+      <!-- Modal -->
+    <div class="modal fade" id="modalForm" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+     <div class="modal-dialog">
+       <div class="modal-content">
+         <div class="modal-header">
+           <h1 class="modal-title">Hello</h1>
+           <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+             <div>
+                 <label for="inputname"> Name of Product</label>
+                 <input type="text" id="addName">
+             </div>
+             <div>
+                 <label for="inputprice"> Price of Product</label>
+                 <input type="number" id="addPrice">
+             </div>
+             <div>
+                 <label for="inputStyle"> Select the style</label>
+                 <input type="text" id="addStyle">
+             </div>
+             <div>
+                 <label for="inputImage"> Picture of Product</label>
+                 <input type="text" id="addImage">
+             </div>
+           </form>
          </div>
-     </footer>
+         <div class="modal-footer">
+           <button class="btn btn-secondary btn-lg" 
+             style="background-color: rgb(181, 218, 181); color: black;"
+             onclick="addItem()" 
+             id="addBtn">Add Product
+           </button>
+         </div>
+       </div>
+      </div>
+    </div>
+ </main>
+   <footer class="footer mt-auto py-3 bg-black" style="text-align: center; background-color:  rgb(246, 246, 246,0.5);">   
+     <div>
+       <p>© Copyright 2022 by Nabila. All rights reserved.</p>
+     </div>
+   </footer>
 
     <script src="../script/admin.js"></script>
     <script src="https://kit.fontawesome.com/cce18f0ce0.js"crossorigin="anonymous"></script>  

@@ -13,31 +13,47 @@
     <link rel="stylesheet" href="/styles/styles.css">
     <title>Checkout</title>
 </head>
-<body >
+<body class="checkoutpg min-vh-100">
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand " href="#"><img src="../imgs/corseticon.png" alt="icon" width="50px"></a>
+          <a class="navbar-brand " href="/index.html"><img src="../imgs/corseticon.png" alt="icon" width="50px"></a>
           <button class="navbar-toggler bg-dark" style="color: black;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon" style="color: black;"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav navbarlinks">
               <!-- <a class="nav-link active" aria-current="page" href="#">Checkout</a> -->
-              <a href="../index.html"> <b> <i class="fa fa-house"></i> Home</b></a>
-              <a href="/html/admin.html"> <b> <i class="fa fa-info"></i> Admin</b></a>
+               <a href="../index.html"> <b> <i class="fa fa-house"></i> Home</b></a>
+               <a href="/html/admin.html"> <b> <i class="fa fa-info"></i> Admin</b></a>
             </div>
           </div>
         </div>
       </nav>
 
-      <main class="checkoutpg min-vh-100"></main>
-      <footer class="footer mt-auto py-3 bg-black" style="text-align: center;">   
+      <main>
+        <table class="table table" style="background-color: rgb(246, 246, 246);">
+          <thead>
+            <th>Product Name</th>
+            <th>Style</th>
+            <th>Price</th>
+            <th></th>
+          </thead>
+          <tbody>
+            <!-- DOM manipulation -->
+          </tbody>
+          <table class="table table"
+            style="background-color: rgb(246, 246, 246);">
+            Total Price: R1500
+          </table>
+       </table>
+      </main>
+      <footer class="footer mt-auto py-3 bg-black" style="text-align: center;  background-color:  rgb(246, 246, 246,0.5);">   
         <div>
-           <p>© Copyright 2022 by Nabila. All rights reserved.</p>
-         </div>
+         <p>© Copyright 2022 by Nabila. All rights reserved.</p>
+        </div>
      </footer>
-      <script src="/script/checkout.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="/script/checkout.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 </body>
 </html>
