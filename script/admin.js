@@ -5,6 +5,10 @@ let tbody = document.getElementById('tabulated');
 let catalogue= JSON.parse(localStorage.catalogue);
 let x = JSON.parse(localStorage.catalogue)
 
+// 
+function print(){
+ 
+// 
     catalogue.forEach(item => {
         try {
             tbody.innerHTML += `
@@ -25,7 +29,9 @@ let x = JSON.parse(localStorage.catalogue)
         } catch (error) {
 console.trace(error)        }
      } );  
- 
+    
+}
+print();
 
 
 // Add button

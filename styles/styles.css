@@ -10,11 +10,11 @@
 }
 
 .navbznav{
-    display: flex;
+    display: flex; 
     position: relative;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(233, 226, 226,0.3) ;
+    background-color: rgba(255, 255, 255, 0.3) ;
     color:black;
 }
 
@@ -25,22 +25,18 @@
     height: 100%;
 }
 
-.navbarlinks ul{
+.navbarlinks{
     margin: 0;
     padding: 0;
     display: flex;
 }
-.navbarlinks li{
-    list-style: none;
-}
 
-.nav-link a{
-    text-decoration: none;
-    font-size: larger;
+
+.navbarlinks a{
     color:black;
     text-shadow: 1px 1px white;
     padding: 1rem;
-    display: block;
+    display: block ;
 }
 
 .navbarlinks li:hover{
@@ -131,6 +127,11 @@
 #addbtn{
     display: flex;
     text-align: center;
+}
+
+/* Checkout */
+.checkoutpg{
+    background: url(/imgs/cassio-jardim-Efd5oh-nQWI-unsplash.jpg) no-repeat center/cover;
 }
  @media only screen and (max-width: 600px){
     /* toggle button will show */
