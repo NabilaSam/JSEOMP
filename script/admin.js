@@ -44,7 +44,6 @@ function addItem(){
         let style = document.querySelector('#addStyle').value;
         let image = document.querySelector('#addImage').value;
     
-        // console.log(name)
         catalogue.push({
             name,
             price,
@@ -54,7 +53,7 @@ function addItem(){
         localStorage.setItem('catalogue', JSON.stringify(catalogue));
     
         // getitem and then display row
-        // let addedItem = JSON.parse(localStorage.getItem('catalogue'))
+      
         tbody.innerHTML = ''
         print()
 }

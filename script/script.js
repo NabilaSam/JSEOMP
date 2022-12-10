@@ -79,10 +79,6 @@ localStorage.setItem('catalogue',JSON.stringify(
         },
     ]    
 ));
-// getItem = fetches data from local storage
-// JSON.parse = convert the data to a JSON data in the local storage
-// let x = JSON.parse(localStorage.getItem('catalogue'));
-// console.log(x);
 
 
 // product list in cards

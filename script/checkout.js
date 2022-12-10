@@ -19,7 +19,6 @@ Object.keys(cart).forEach((i) => {
     `
 })
 
-// let g = [];
 
 function del(id) {
     localStorage.setItem('catalogue', JSON.stringify(catalogue));
