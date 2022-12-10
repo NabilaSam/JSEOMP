@@ -12,17 +12,21 @@
     <title>Admin</title>
 </head>
 <body class="adminpg min-vh-100">
-    <nav class="navbar">
-        <div class="icon"> <img src="../imgs/corseticon.png" alt="icon" width="50px"> </div>
-        
-        <!-- other pages -->
-        <div class="navbarlinks">
-            <ul>
-                <li><a href="../index.html"> <b> <i class="fa fa-house"></i> Home</a></li></b>
-                <li><a href="./checkout.html"> <b> <i class="fa fa-cart-shopping"></i> Checkout</a></li></b>
-            </ul>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand " href="#"><img src="../imgs/corseticon.png" alt="icon" width="50px"></a>
+          <button class="navbar-toggler bg-dark" style="color: black;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" style="color: black;"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav navbarlinks">
+              <!-- <a class="nav-link active" aria-current="page" href="#">Checkout</a> -->
+              <a href="../index.html"> <b> <i class="fa fa-house"></i> Home</b></a>
+              <a href="/html/admin.html"> <b> <i class="fa fa-info"></i> Admin</b></a>
+            </div>
+          </div>
         </div>
-    </nav>
+      </nav>
     <main>
         <div>
             <table class="table">
@@ -82,6 +86,12 @@
             
         </div>
     </main>
+    <footer class="footer mt-auto py-3 bg-black" style="text-align: center;">   
+        <div>
+           <p>© Copyright 2022 by Nabila. All rights reserved.</p>
+         </div>
+     </footer>
+
     <script src="../script/admin.js"></script>
     <script src="https://kit.fontawesome.com/cce18f0ce0.js"crossorigin="anonymous"></script>  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

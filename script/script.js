@@ -2,9 +2,8 @@
 // Sample Data
 // Using stringify to adjust the data in the ideal form for this js file. chrck local storage in browser
 
- catalogue = JSON.parse(localStorage.getItem('catalogue'))? 
-JSON.parse(localStorage.getItem('catalogue')):
-localStorage.setItem('catalogue', JSON.stringify([
+let catalogue = JSON.parse(localStorage.getItem('catalogue'))? 
+JSON.parse(localStorage.getItem('catalogue')):[
     {
         id: 1,
         name: "Black lace corset",
@@ -80,7 +79,7 @@ localStorage.setItem('catalogue', JSON.stringify([
         style: "sleeves"
 
     },
-]));
+];
 
 // getItem = fetches data from local storage
 // JSON.parse = convert the data to a JSON data in the local storage
